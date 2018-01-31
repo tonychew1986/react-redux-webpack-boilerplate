@@ -1,0 +1,170 @@
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect
+  fill #FF6700
+
+
+svg
+  padding-left 50px
+
+.paymentHeader
+  position absolute
+  z-index 10
+  width 100%
+
+  .logo
+    float left
+    padding 20px
+
+    img
+      width 150px
+
+  .paymentMode
+    float right
+    padding 20px
+
+    .paymentModeEntry
+      float left
+      padding 8px
+      opacity 0.4
+      cursor pointer
+
+      &:hover
+        opacity 0.8
+
+      img
+        width 40px
+
+    .paymentModeEntrySelected
+      opacity 1 !important
+
+.cryptoSymbol
+  text-transform uppercase
+
+.payment
+  position absolute
+  width calc(100% - 401px)
+  height 100%
+
+  .paymentCurrent
+    position fixed
+    top 0px
+    left 0px
+    width calc(100% - 401px)
+    text-align center
+    height 100%
+    padding 20px
+    padding-top 90px
+
+    .paymentCurrentTitle
+      font-size 11px
+
+    .paymentCurrentDetail
+      font-size 32px
+      font-weight 900
+      margin-bottom 15px
+
+      input
+        max-width 50%
+        width 200px
+
+    .paymentCurrentAddress
+      padding 15px 0px
+      font-size 22px
+      font-weight bold
+
+      .paymentCurrentAddressQR
+        height 200px
+        width 200px
+        padding 15px
+        background-color white
+        margin auto
+        margin-bottom 15px
+
+  .paymentPaid
+    position fixed
+    top 0px
+    left 0px
+    width calc(100% - 401px)
+    text-align center
+    height 100%
+    padding 20px
+    padding-top 90px
+
+    .paymentPaidContent
+      padding-top 70px
+      
+      .paymentPaidContentLogo
+        padding 30px
+        background-color #121212
+        border-radius 50%
+        width 160px
+        height 160px
+        margin auto
+        margin-bottom 40px
+
+      .paymentPaidContentText
+        font-size 24px
+
+        span
+          font-weight bold
+
+  .paymentPending
+    position fixed
+    top 0px
+    left 0px
+    width calc(100% - 401px)
+    text-align center
+    height 100%
+    padding 20px
+    padding-top 90px
+
+    .paymentPendingContent
+      padding-top 70px
+
+      .paymentPendingContentText
+        font-size 24px
+
+  .paymentCallToAction
+    position absolute
+    bottom 25px
+    width calc(100% - 40px)
+
+.sidebarHistory
+  position fixed
+  top 0px
+  left calc(100% - 401px)
+  width 400px
+  height 100%
+  border-left 1px solid #666
+
+  .sidebarHistoryEntry
+    padding 20px
+    border-bottom 1px solid
+    margin-bottom 10px
+
+    .sidebarHistoryEntryHash
+      font-size 10px
+      color #BBB
+
+    .sidebarHistoryEntryValue
+      font-size 20px
+      font-weight bold
+      padding 5px 0px
+
+    .sidebarHistoryEntryConfirmation
+      font-size 11px
+      color #DDD
