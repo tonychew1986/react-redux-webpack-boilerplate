@@ -9,7 +9,6 @@ var path = require('path');
 
 var srcPath = path.join(__dirname, 'source');
 var buildPath = path.join(__dirname, 'public');
-var appPath = path.join(__dirname, 'app');
 
 module.exports = {
   context: srcPath,
