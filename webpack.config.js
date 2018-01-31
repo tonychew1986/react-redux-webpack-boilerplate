@@ -3,6 +3,7 @@ var debug = process.envNODE_ENV !== "production";
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var WebpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 var CommonsPlugin = new require("webpack/lib/optimize/CommonsChunkPlugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 var path = require('path');
@@ -20,6 +21,14 @@ module.exports = {
       path: buildPath,
       filename: "./js/bundle--[name].js"
   },
+  devServer: {
+    contentBase: buildPath,
+    stats: 'errors-only',
+    open: true,
+    port: 12000,
+    compress: true
+  },
+  devtool: 'inline-source-map',
   watch: true,
   module: {
     loaders: [
@@ -46,6 +55,7 @@ module.exports = {
     contentBase: './'
   },
   plugins: [
+    //new CleanWebpackPlugin(['public']),
     new CommonsPlugin({
       name: "vendor",
       filename: "./js/bundle--vendor.js"

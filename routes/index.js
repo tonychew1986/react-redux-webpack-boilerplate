@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 router.post('/addresses', (req, res) => {
   res.send({
-    "addresses": paymentAddresses
+    "addresses": "paymentAddresses"
   });
 });
 

@@ -5,6 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "./node_modules/.bin/webpack -p",
+    "dev": "./node_modules/.bin/webpack-dev-server",
     "test": "mocha --recursive test",
     "test:coverage": "nyc npm test",
     "test:unit": "mocha --recursive test/middleware test/models test/routes",
@@ -48,6 +51,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "clean-webpack-plugin": "^0.1.18",
     "debug": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-livereload": "^3.8.0",
@@ -59,6 +63,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "supertest": "^2.0.0",
-    "webpack": "^3.4.1"
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.11.1"
   }
 }
