@@ -1,5 +1,9 @@
 # React Redux Webpack Boilerplate
 
+## To get started:
+1. Open terminal and run "webpack"
+2. Open another terminal and run "gulp"
+
 ### Styles ( CSS / Stylus )
 1. Go to folder "/source/css/"
 2. Go to "App.styl"
