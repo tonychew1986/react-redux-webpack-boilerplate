@@ -60,6 +60,7 @@
     "gulp-stylus": "^2.0.0",
     "mocha": "^4.0.1",
     "nyc": "^10.0.0",
+    "remote-redux-devtools": "^0.5.12",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "supertest": "^2.0.0",
